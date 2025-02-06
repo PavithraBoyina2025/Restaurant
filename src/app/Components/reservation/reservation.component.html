@@ -1,0 +1,60 @@
+<body>
+<app-navbar></app-navbar>
+<div class="container mt-4">
+    <h2 class="text-center text-white">Restaurant Table Reservation</h2>
+    
+    <form [formGroup]="reservationForm" (ngSubmit)="submitReservation()" class="p-4">
+      <div class="mb-3">
+        <label class="form-label">Name:</label>
+        <input type="text" class="form-control" formControlName="name" required>
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Email:</label>
+        <input type="email" class="form-control" formControlName="email" required>
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Date:</label>
+        <input type="date" class="form-control" formControlName="date" required>
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Time:</label>
+        <input type="time" class="form-control" formControlName="time" required>
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Guests:</label>
+        <input type="number" class="form-control" formControlName="guests" min="1" required>
+      </div>
+  
+      <button type="submit" class="btn btn-primary" [disabled]="!reservationForm.valid">Reserve Table</button>
+    </form>
+  
+    <hr>
+  
+    <h3 class="mt-4 text-white">Reservations:</h3>
+    <table class="table table-striped mt-2" *ngIf="reservations.length > 0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Guests</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reservation of reservations">
+          <td>{{ reservation.name }}</td>
+          <td>{{ reservation.email }}</td>
+          <td>{{ reservation.date }}</td>
+          <td>{{ reservation.time }}</td>
+          <td>{{ reservation.guests }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+  <app-footer></app-footer>

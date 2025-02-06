@@ -1,0 +1,87 @@
+<body>
+<app-navbar></app-navbar>
+<div class="mb-5"></div>
+<h3 class="text-center text-white">Login</h3>
+<div class="container">
+  <!--Creating a form-->
+  <form #Login="ngForm" (ngSubmit)="onLogin($event)">
+    <!--ngSubmit is used to submit the form-->
+
+    <div class="form-group">
+      <label for="FirstName">FirstName:</label>
+      <input
+        #firstName="ngModel"
+        required
+        minlength="2"
+        type="text"
+        class="form-control"
+        name="FirstName"
+        ngModel
+      />
+      <!--ngModel is used to bind the data--><!--requied gives validation that filed cannot be empty-->
+      <div *ngIf="Login.submitted && firstName.invalid" class="text-danger">
+        Invalid FirstName!!
+      </div>
+    </div>
+    <pre></pre>
+
+    <div class="form-group">
+      <label for="LastName">LastName:</label>
+      <input
+        #lastName="ngModel"
+        required
+        type="text"
+        class="form-control"
+        name="LastName"
+        ngModel
+      />
+      <div *ngIf="Login.submitted && lastName.invalid" class="text-danger">
+        Invalid LastName!!
+        <!--when submit is clicked then only validations will occur-->
+      </div>
+    </div>
+
+    <pre></pre>
+    <div class="form-group">
+      <label for="email">EmailId:</label>
+      <input
+        #email="ngModel"
+        required
+        pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+        type="text"
+        class="form-control"
+        name="email"
+        ngModel
+      />
+      <div *ngIf="Login.submitted && email.invalid" class="text-danger">
+        Invalid email!!
+      </div>
+    </div>
+
+    <pre></pre>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input
+        #password="ngModel"
+        required
+        minlength="5"
+        type="text"
+        class="form-control"
+        name="Password"
+        ngModel
+      />
+      <div *ngIf="Login.submitted && password.invalid" class="text-danger">
+        Invalid password, Make sure your password has atleast 5 characters!!
+      </div>
+    </div>
+    <div class="mb-4"></div>
+    <div>
+      <button class="btn btn-primary p-2" [disabled] ="!Login.form.valid" type="submit">Submit</button>
+    </div>
+  </form>
+  <p class="text-center text-danger mt-3">{{ loginMessage }}</p>
+</div> 
+</body>
+<app-footer></app-footer>
+
+

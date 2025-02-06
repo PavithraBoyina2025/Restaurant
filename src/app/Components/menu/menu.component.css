@@ -1,0 +1,33 @@
+.card {
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+  }
+  
+  .btn {
+    background-color: #ff5722;
+    border-color: #ff5722;
+  }
+
+  body {
+    height: 100%; /* Ensures the container takes full height of the viewport */
+    width: 100%; /* Ensures the container takes up the full width */
+    background-image: url('https://img.freepik.com/premium-vector/vector-gray-food-background1_733406-3095.jpg?ga=GA1.1.1287546734.1738329057&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1px;
+    border-radius: 1px;
+  }
+
+
+
+  
+  
