@@ -24,12 +24,12 @@ export default {
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 4989, hash: '28a767d5b50be369b407fd4d30c4919d89ce994d75ecd0e84b0c39045895f1d6', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1083, hash: 'e66360a782665415be9c29441623de3dba9c58c5f5d71f8176edb95096bb7264', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'home/index.html': {size: 18686, hash: 'f9beb0a142a01d897643cbf6ccf164c11b587696cab23aeeec3e7c63200e40a9', text: () => import('./assets-chunks/home_index_html.mjs').then(m => m.default)},
-    'login/index.html': {size: 19674, hash: 'fb599326409e1c5013e23c53adc424156c46caaba9986e4dc48987e93607768d', text: () => import('./assets-chunks/login_index_html.mjs').then(m => m.default)},
-    'menu/index.html': {size: 27125, hash: '1ca46f8f2ee2f153754e00416397aec36d8f6d6e984685e79c8af4676ca33d34', text: () => import('./assets-chunks/menu_index_html.mjs').then(m => m.default)},
-    'booking/index.html': {size: 19603, hash: '0bad50c8e985a03abfbc522ab39d2effee12dae1dcaae77aadd1577ac217fdec', text: () => import('./assets-chunks/booking_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 4989, hash: '11947ff8faa4f7e9c49221da128bb12e41038bf736c178c45edab35cfe31acf1', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1083, hash: 'dcfcb7aba02023ca53ceeeb07d49bf34f251be874f48800e3e4ddf45d9a0952b', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'home/index.html': {size: 18686, hash: '3b0f41d1660d43fa3773c38849056a0b6738aba5cd1e1fd9c0b1f07feb466d7a', text: () => import('./assets-chunks/home_index_html.mjs').then(m => m.default)},
+    'menu/index.html': {size: 27125, hash: '86afe26c1dbf4c8e587a3e0e82ef8cd6969e95be27f810129aea828e287962ee', text: () => import('./assets-chunks/menu_index_html.mjs').then(m => m.default)},
+    'login/index.html': {size: 19660, hash: 'bcda265cb7675cd54ffe01eca426024a852d0e41486647e6e6e5a8de0081c9b0', text: () => import('./assets-chunks/login_index_html.mjs').then(m => m.default)},
+    'booking/index.html': {size: 19622, hash: '2edd7fa73d3c50bd1449d6afd3053dcc31c41afdeedf91f0abb03ddedf70b2d9', text: () => import('./assets-chunks/booking_index_html.mjs').then(m => m.default)},
     'styles-IG45FNYW.css': {size: 231634, hash: 'I3wd5rAhVIs', text: () => import('./assets-chunks/styles-IG45FNYW_css.mjs').then(m => m.default)}
   },
 };
