@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/Restaurant/booking": {},
+    "/Restaurant/home": {},
+    "/Restaurant/login": {},
+    "/Restaurant/menu": {}
+  }
+}
