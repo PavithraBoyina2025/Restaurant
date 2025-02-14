@@ -3,7 +3,7 @@
   max-width: 600px;
 }
 
-body {
+.reservation-background {
   height: 200%; /* Ensures the container takes full height of the viewport */
   width: 100%; /* Ensures the container takes up the full width */
   background-image: url('https://plus.unsplash.com/premium_photo-1661432501995-2612dfa06f60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fHJlc3RhdXJhbnQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww');
