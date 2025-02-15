@@ -16,4 +16,6 @@ Footer with copyright notice: Copyrights@pavithraboyina2025.
 Angular 19.1.5 (Framework)
 Bootstrap and Css (Styling and Design)
 Angular Routing (Navigation)
+Typescript
+
 
