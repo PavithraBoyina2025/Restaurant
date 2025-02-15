@@ -1,7 +1,8 @@
 🍽️ Culinary Canvas
-Culinary Canvas is a restaurant web application built using Angular 19.1.5. It offers an intuitive interface for users to explore the menu, reserve tables, and manage their accounts.
+Culinary Canvas is a restaurant web application built using Angular 19.1.5. 
+It offers an intuitive interface for users to explore the menu, reserve tables, and manage their accounts.
 
-🚀 Features
+🚀 Features:
 Built with Angular 19.1.5 and Bootstrap for responsive design.
 Routing functionality for seamless navigation.
 
@@ -12,7 +13,7 @@ Reservation: Users can reserve a table.
 
 Footer with copyright notice: Copyrights@pavithraboyina2025.
 
-🛠️ Technologies Used
+🛠️ Technologies Used:
 Angular 19.1.5 (Framework)
 Bootstrap and SCSS/CSS (Styling and Design)
 Angular Routing (Navigation)
